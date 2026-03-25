@@ -1,9 +1,9 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Aarush Bhagat | Full-Stack Developer",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Explore the portfolio of Aarush, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Discover the portfolio of Aarush, a full-stack developer creating interactive web experiences and innovative projects.",
   },
   keywords: [
     "Naresh",
@@ -23,23 +23,23 @@ const config = {
     "Spline",
     "Framer Motion",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
+  author: "Aarush Bhagat",
+  email: "aarushbhagat093@gmail.com",
   site: "https://nareshkhatri.site",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
+  githubUsername: "AarushBhagat",
   githubRepo: "3d-portfolio",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    twitter: "https://x.com/",
+    linkedin: "https://www.linkedin.com/in/aarushbhagat03/",
+    instagram: "https://www.instagram.com/aarushbhagat5/",
+    facebook: "https://www.facebook.com/aarush.bhagat",
+    github: "https://github.com/AarushBhagat",
   },
 };
 export { config };
