@@ -1,6 +1,7 @@
 "use client";
 import { Check, ChevronRight, Loader2 } from "lucide-react";
 import React from "react";
+import emailjs from '@emailjs/browser';
 import { Label } from "./ui/label";
 import { Input } from "./ui/ace-input";
 import { Textarea } from "./ui/ace-textarea";
@@ -22,19 +23,17 @@ const ContactForm = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("/api/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: fullName,
+          from_email: email,
+          message: message,
+          to_name: "Aarush Bhagat",
         },
-        body: JSON.stringify({
-          fullName,
-          email,
-          message,
-        }),
-      });
-      const data = await res.json();
-      if (data.error) throw new Error(data.error);
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
       toast({
         title: "Thank you!",
         description: "I'll get back to you as soon as possible.",

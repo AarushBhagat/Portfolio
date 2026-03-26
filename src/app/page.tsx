@@ -5,12 +5,14 @@ import SmoothScroll from "@/components/smooth-scroll";
 import { cn } from "@/lib/utils";
 import AnimatedBackground from "@/components/animated-background";
 import SkillsSection from "@/components/sections/skills";
+import EducationSection from "@/components/sections/education";
 import ExperienceSection from "@/components/sections/experience";
 import ProjectsSection from "@/components/sections/projects";
 import ContactSection from "@/components/sections/contact";
 import HeroSection from "@/components/sections/hero";
 import AboutSection from "@/components/sections/about";
 import CertificatesSection from "@/components/sections/certificates";
+import HackathonsSection from "@/components/sections/hackathons";
 
 function MainPage() {
   return (
@@ -20,9 +22,11 @@ function MainPage() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <EducationSection />
         <ExperienceSection />
         <ProjectsSection />
         <CertificatesSection />
+        <HackathonsSection />
         <ContactSection />
       </main>
     </SmoothScroll>

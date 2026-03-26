@@ -52,7 +52,7 @@ const FloatingDockMobile = ({
             layoutId="nav"
             className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
           >
-            {items.map((item, idx) => (
+            {items.filter(Boolean).map((item, idx) => (
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 10 }}
@@ -139,7 +139,7 @@ const FloatingDockDesktop = ({
           className
         )}
       >
-        {items.map((item) => (
+        {items.filter(Boolean).map((item) => (
           <IconContainer mouseX={mouseX} key={item.title} {...item} />
         ))}
       </motion.div>

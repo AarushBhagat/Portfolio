@@ -29,6 +29,7 @@ import {
   SiRedis,
   SiCloudinary,
   SiJsonwebtokens,
+  SiPhp,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 const BASE_PATH = "/assets/projects-screenshots";
@@ -73,6 +74,12 @@ export type Skill = {
   icon: ReactNode;
 };
 const PROJECT_SKILLS = {
+  php: {
+    title: "PHP",
+    bg: "black",
+    fg: "white",
+    icon: <SiPhp />,
+  },
   next: {
     title: "Next.js",
     bg: "black",
@@ -550,7 +557,7 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Portfolio",
     title: "My Portfolio",
-    src: "/pic.jpeg",
+    src: "/portfolio/p1.png",
     screenshots: ["p1.png", "p2.png", "p3.png", "p4.png", "p5.png"],
     live: "http://nareshkhatri.vercel.app",
     github:"https://github.com/Naresh-Khatri/Portfolio",
@@ -613,138 +620,104 @@ const projects: Project[] = [
     },
   },
   {
-    id: "ghostchat",
-    category: "Anonymous chat",
-    title: "GhostChat",
-    src: "/assets/projects-screenshots/ghostchat/1.png",
-    screenshots: ["1.png", "2.png", "3.png", "4.png"],
-    live: "https://ghostchat.vercel.app",
-    github:"https://github.com/Naresh-Khatri/GhostChat",
+    id: "planpilot",
+    category: "Fullstack",
+    title: "PlanPilot – AI-Powered Timetable Planning System",
+    src: "/assets/PlanPilot/PlanPilot.png",
+    screenshots: ["PlanPilot.png", "pl1.png", "pl2.png", "pl3.png", "pl4.png"],
+    live: "",
+    github:"https://github.com/AarushBhagat/Smart-Time-Table-Generator",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.chakra],
-      backend: [PROJECT_SKILLS.supabase],
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.tailwind],
+      backend: [PROJECT_SKILLS.php], // You can add other skills if they exist in PROJECT_SKILLS, like OAuth, Gemini, dompdf
     },
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono ">
-            Ghostchat is your go-to spot for sending anonymous messages without
-            leaving a trace. Powered by Supabase, it&apos;s all about keeping things
-            low-key and secure. Whether you&apos;re sharing secrets, giving feedback,
-            or just having some fun, Ghostchat ensures your identity stays
-            hidden, while your voice is heard. Say what you want, without the
-            worry.
+          <TypographyP className="font-mono">
+            An intelligent academic scheduling platform that generates optimized timetables using AI algorithms. Features Google OAuth authentication, smart conflict resolution, cognitive science-based scheduling, and PDF export capabilities.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/ghostchat/1.png`,
-              `${BASE_PATH}/ghostchat/2.png`,
-              `${BASE_PATH}/ghostchat/3.png`,
-              `${BASE_PATH}/ghostchat/4.png`,
+              `/assets/PlanPilot/PlanPilot.png`,
+              `/assets/PlanPilot/pl1.png`,
+              `/assets/PlanPilot/pl2.png`,
+              `/assets/PlanPilot/pl3.png`,
+              `/assets/PlanPilot/pl4.png`,
             ]}
           />
+          <TypographyH3 className="my-4 mt-8">Highlights</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">AI-powered schedule optimization with intelligent algorithms</li>
+            <li className="font-mono">Google OAuth 2.0 authentication & secure session management</li>
+            <li className="font-mono">Smart conflict resolution & cognitive science-based scheduling</li>
+            <li className="font-mono">PDF export with interactive timetable interface</li>
+          </ul>
+          <TypographyH3 className="my-4 mt-8">Technologies</TypographyH3>
+          <p className="font-mono mb-2">
+            PHP | JavaScript | Tailwind CSS | Google OAuth | Gemini API | dompdf
+          </p>
         </div>
       );
     },
   },
   {
-    id: "jra",
-    category: "Result analyzer",
-    title: "JNTUA Results Analyzer",
-    src: "/assets/projects-screenshots/jra/1.png",
-    screenshots: ["1.png"],
-    live: "https://naresh-khatri.github.io/JNTUA-result-analyser-spa/#/",
+    id: "ecoroute",
+    category: "Route Optimization",
+    title: "Eco-Route – Fuel-Efficient Route Optimization",
+    src: "/assets/seo/EcoRoute/EcoRoute.png",
+    screenshots: ["e1.png", "e2.png", "e3.png", "e4.png", "el1.jpeg", "analyse.png", "feul.png"],
+    live: "",
+    github: "https://github.com/AarushBhagat/Eco-Route",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.vue],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.mongo,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.docker,
-      ],
+      frontend: [PROJECT_SKILLS.js],
+      backend: [PROJECT_SKILLS.python],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            JNTUA Results Analyzer was a revolutionary tool designed to simplify
-            and enhance the experience of accessing academic results. It served
-            as a powerful proxy between the JNTUA university results website and
-            its users, offering a range of features that made result analysis
-            faster and more efficient. Here&apos;s what made it stand out:
+            A smart eco-routing system using graph algorithms to generate fuel-efficient routes. Improved travel efficiency by 35% with an interactive frontend for route visualization.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow images={[`${BASE_PATH}/jra/1.png`]} />
-          <TypographyH3 className="my-4 mt-8">
-            Effortless Results Retrieval
-          </TypographyH3>
-          {/* Effortless Results Retrieval: */}
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Search all your results using a single roll number, eliminating
-              the tedious task of sifting through thousands of rows on the
-              official site.
-            </li>
+          
+          <TypographyH3 className="my-4 mt-8">Landing Pages</TypographyH3>
+          <p className="font-mono mb-2">
+            The platform features clean, user-friendly interfaces to guide the route optimization process.
+          </p>
+          <SlideShow
+            images={[
+              `/assets/seo/EcoRoute/e1.png`,
+              `/assets/seo/EcoRoute/e2.png`,
+              `/assets/seo/EcoRoute/e3.png`,
+              `/assets/seo/EcoRoute/e4.png`,
+            ]}
+          />
+
+          <TypographyH3 className="my-4 mt-8">Analysis & Fuel Tracking</TypographyH3>
+          <p className="font-mono mb-2">
+            Interactive dashboards visualize the efficiency improvements and estimated fuel metrics algorithmically.
+          </p>
+          <SlideShow
+            images={[
+              `/assets/seo/EcoRoute/analyse.png`,
+              `/assets/seo/EcoRoute/feul.png`,
+              `/assets/seo/EcoRoute/el1.jpeg`,
+            ]}
+          />
+
+          <TypographyH3 className="my-4 mt-8">Highlights</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">Improved travel efficiency by 35%</li>
+            <li className="font-mono">Graph algorithm-based routing</li>
+            <li className="font-mono">Reduced response time by 30%</li>
+            <li className="font-mono">Interactive route visualization</li>
           </ul>
-          <TypographyH3 className="my-4 mt-8">Class-Wise Results:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              class-wise results effortlessly by entering a roll number range.
-              No more manual searches or filtering.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Faculty Features:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Faculty members could download batch results in Excel format,
-              making administrative tasks a breeze.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">
-            Enhanced Data Insights:
-          </TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Each result came with additional features including:
-              <ul className="list-disc font-mono ml-6">
-                <li>
-                  <strong>CGPA Calculations: </strong>Easily track your
-                  cumulative grade point average.
-                </li>
-                <li>
-                  <strong>Charts:</strong> Visualize your academic performance
-                  with comprehensive charts.
-                </li>
-                <li>
-                  <strong>Future Projections:</strong> Get insights into
-                  potential future outcomes based on current performance.
-                </li>
-                <li>
-                  <strong> Backlog Counts: </strong>Keep track of your backlog
-                  subjects at a glance.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Performance:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              The application was significantly faster and more efficient than
-              the official site, providing a smoother user experience.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Downfall:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Unfortunately, as of May 2022, the tool stopped working due to the
-              introduction of CAPTCHA on the official JNTUA results site, which
-              disrupted the seamless functionality of the app. JNTUA Results
-              Analyzer transformed the way students and faculty interacted with
-              academic results, making it a must-have tool until its unexpected
-              shutdown.
-            </li>
-          </ul>
+          <TypographyH3 className="my-4 mt-8">Technologies</TypographyH3>
+          <p className="font-mono mb-2">
+            Python | C++ | JavaScript | HTML | CSS
+          </p>
         </div>
       );
     },

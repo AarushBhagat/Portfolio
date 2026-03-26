@@ -375,6 +375,42 @@ export const EXPERIENCE: Experience[] = [
   },
 ];
 
+export type Education = {
+  id: number;
+  startDate: string;
+  endDate: string;
+  degree: string;
+  institution: string;
+  score: string;
+};
+
+export const EDUCATION: Education[] = [
+  {
+    id: 1,
+    startDate: "Aug 2023",
+    endDate: "Present",
+    degree: "Bachelor of Technology - Computer Science and Engineering",
+    institution: "Lovely Professional University Phagwara, Punjab",
+    score: "CGPA: 7.63",
+  },
+  {
+    id: 2,
+    startDate: "Mar 2022",
+    endDate: "Mar 2023",
+    degree: "Intermediate",
+    institution: "Innocent Hearts School Jalandhar, Punjab",
+    score: "Percentage: 83.25%",
+  },
+  {
+    id: 3,
+    startDate: "Mar 2020",
+    endDate: "Mar 2021",
+    degree: "Matriculation",
+    institution: "Innocent Hearts School Jalandhar, Punjab",
+    score: "Percentage: 78.5%",
+  },
+];
+
 export const themeDisclaimers = {
   light: [
     "Warning: Light mode emits a gazillion lumens of pure radiance!",
