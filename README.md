@@ -94,9 +94,9 @@ To enable the contact form to send emails directly to your Gmail:
 
 ```env
 # EmailJS Configuration
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_58owav5
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_8keu6x3
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=H6C_kQYyV8S_tZJ_G
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_58XXXX
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_8XXXXXX
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=H6C_kQYyV8SXXXXXX
 ```
 
 Replace with your actual EmailJS credentials from their dashboard.
