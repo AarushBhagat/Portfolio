@@ -6,7 +6,8 @@ A jaw-dropping full-stack developer portfolio packed with interactive 3D animati
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AarushBhagat/Portfolio)
 
-![Portfolio Preview](https://github.com/AarushBhagat/Portfolio/blob/main/portfolio/p1.png?raw=true)
+<img width="1895" height="964" alt="image" src="https://github.com/user-attachments/assets/8ba1caa4-5387-4a65-8b77-32eed8247311" />
+
 
 ## ✨ Features
 
