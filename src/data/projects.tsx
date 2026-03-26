@@ -269,7 +269,7 @@ const projects: Project[] = [
     id: "unied",
     category: "Education Management",
     title: "UniEd",
-    src: "/assets/unied/UniEd.png", 
+    src: "/assets/UniEd/UniEd.png", 
     screenshots: ["webLanding.png", "modals.png", "dashboard.png", "lisaAI.png"],
     skills: {
       frontend: [
@@ -443,7 +443,7 @@ const projects: Project[] = [
     id: "startupops",
     category: "AI Startup Management",
     title: "StartupOps",
-    src: "/assets/StartupOps/startupOps.png",
+    src: "/assets/StartupOps/sl1.png",
     screenshots: ["sl1.png", "sl2.png", "sl3.png", "sl4.png"],
     live: "https://startupops-omega.vercel.app/",
     github: "https://github.com/AarushBhagat/StartupOps",
