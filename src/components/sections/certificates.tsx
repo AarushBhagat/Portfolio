@@ -142,11 +142,11 @@ const CertificatesSection = () => {
             <TypographyH2>Certificates</TypographyH2>
           </div>
 
-          <div ref={cardsRef} className="flex gap-10 z-10 pl-4 w-fit">
+          <div ref={cardsRef} className="flex gap-4 md:gap-10 z-10 pl-4 md:pl-4 w-fit">
             {certificates.map((cert, index) => (
               <div
                 key={index}
-                className="certificate-card staggered-reveal relative h-[400px] w-[600px] flex-shrink-0 rounded-2xl overflow-hidden shadow-2xl border border-white/10 group bg-slate-200 dark:bg-slate-900"
+                className="certificate-card staggered-reveal relative h-[250px] sm:h-[320px] md:h-[400px] w-[280px] sm:w-[400px] md:w-[600px] flex-shrink-0 rounded-2xl overflow-hidden shadow-2xl border border-white/10 group bg-slate-200 dark:bg-slate-900"
               >
                 <div className="relative w-full h-full p-4">
                   <Image

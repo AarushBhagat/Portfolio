@@ -68,7 +68,7 @@ const Header = ({ loader }: HeaderProps) => {
           onClick={() => setIsActive(!isActive)}
           className={cn(
             styles.el,
-            "m-0 p-0 h-6 bg-transparent flex items-center justify-center"
+            "m-0 p-2 md:p-0 h-11 md:h-6 bg-transparent flex items-center justify-center"
           )}
         >
           <div className="relative hidden md:flex items-center">
